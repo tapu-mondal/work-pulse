@@ -1,0 +1,6 @@
+{
+  "name": "Workforce Management System",
+  "description": "Centralized workforce management platform for tracking field employees, attendance, geofenced GPS locations, task assignments, and real-time operations, powered by custom AI productivity insights.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

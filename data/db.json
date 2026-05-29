@@ -1,0 +1,685 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "name": "System Admin",
+      "email": "admin@workforce.com",
+      "role": "admin",
+      "department": "Operations",
+      "designation": "Chief Director",
+      "phone": "+880 1712-345678",
+      "employeeId": "EMP-001",
+      "skills": [
+        "Management",
+        "Planning",
+        "Logistics",
+        "AI Operations"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150",
+      "performanceRating": 5,
+      "hourlyRate": 75
+    },
+    {
+      "id": "u-manager",
+      "name": "Sarah Jenkins",
+      "email": "sarah@workforce.com",
+      "role": "manager",
+      "department": "Field Engineering",
+      "designation": "Senior Supervisor",
+      "phone": "+1 (555) 012-3456",
+      "employeeId": "EMP-002",
+      "skills": [
+        "Team Leadership",
+        "Logistics Optimization",
+        "Quality Control"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150",
+      "performanceRating": 4.8,
+      "hourlyRate": 45
+    },
+    {
+      "id": "u-worker1",
+      "name": "Michael Chen",
+      "email": "michael@workforce.com",
+      "role": "worker",
+      "department": "Field Engineering",
+      "designation": "Senior Technician",
+      "phone": "+1 (555) 987-6543",
+      "employeeId": "EMP-101",
+      "skills": [
+        "Electrical Maintenance",
+        "Fiber Splicing",
+        "HVAC Repair"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
+      "performanceRating": 4.6,
+      "hourlyRate": 28
+    },
+    {
+      "id": "u-worker2",
+      "name": "David Rodriguez",
+      "email": "david@workforce.com",
+      "role": "worker",
+      "department": "Logistics",
+      "designation": "Delivery Coordinator",
+      "phone": "+1 (555) 123-9876",
+      "employeeId": "EMP-102",
+      "skills": [
+        "Route Planning",
+        "Heavy Delivery",
+        "Customer Service"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+      "performanceRating": 4.2,
+      "hourlyRate": 22
+    },
+    {
+      "id": "u-worker3",
+      "name": "Priya Patel",
+      "email": "priya@workforce.com",
+      "role": "worker",
+      "department": "Field Engineering",
+      "designation": "Fibers/Telecom Engineer",
+      "phone": "+1 (555) 456-7890",
+      "employeeId": "EMP-103",
+      "skills": [
+        "Network Diagnostic",
+        "Cabling",
+        "Broadband Setup"
+      ],
+      "avatarUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAB4AFkDASIAAhEBAxEB/8QAGwAAAQUBAQAAAAAAAAAAAAAABAIDBQYHAQD/xABEEAACAQIEAwQGBwUECwAAAAABAgMEEQAFEiETMUEGIlFhBxQycYGRFSNSU5Kh0UJUk7HwFoLB0ggzQ1VicpSz0+Hi/8QAGwEAAQUBAQAAAAAAAAAAAAAABgECAwQFAAf/xAAyEQABAwIEBAUCBQUAAAAAAAABAAIRAyEEBRLwMUFRYRNxkaGxwdEGFBWB8SIkNGPh/9oADAMBAAIRAxEAPwB3Nc2yOryfIskyysgzeVa4yzFqQwqfqyoYqbjFppaaKn7L09FwYGqdKqRDGEKNcXcPttpv574r1PlFOlXwxRSIwuBOJAAduljcYLgypKfLU4jzTz2XVedmJb4tbn/LAm/EajIEWjd0fMwuhoaTN53ZEx01FW1yQCjrIadHVZJmqyvtAEj2+lyL8sG5dFQpUGE8YUSLpL3IZjcAkE36lzuN7b74AFSZYmhWmqoS53cIFubAc74SlIySqiy1Bj0sb8W4J1Db33JxCal5IUvhGI1Jukgo6l5JZTmMUoBZCzaVNt9x5nSAOu/hucsVJluUirllklldhGkbXZlvqJaw7xsFtyt3hvgCVlkdlaonUFwAohNiQb89P/L1w8kTQSpJPVzSKwIUSBFBNj4KDyviPUIuN9VJoM2dvol5dSfSdSQlRWKgjdzph08lJAuUO3LoccpqOkljrKmOu4kVN3nZ3S4WxI1aVsNlO+wxF1FeqLE30hQxO6KRHILklgCNtQP63wVpqpoVIrKY2OpWFKSoPLb6zw88NDmAQ5u/ROdTqEyHb9V2pmiky6Gooqqh9WaThA/6yzEEi5DC3I/K2HxlWYwCL1qopryBHThwHkwuP2/Aj54bgDRlI5Jdcly5dYtAG/Qaj4+Pj7sDZmaurX1VY4Xp7jvSzMCp+0F0ncW23wyafT4Tg2p1U1V5VHFXRR3M7lVkZLCwvuN72O2k/HEJw0+7pvxjHIoXlzI1ldS0bTHaSZpDLI4AAW5ZLnkvM7W8sBfSVB9zD/B/+cOHg34/tH3TQMRaCOHOVKyTCd0jWOrU2JCoLbbDx88OzQvSouqSpZiQD3mYc9+XxwM9ZCpZadJGq1iIQlXPO3M8rXAx2R6ionIp6msMam1lgvt43K44FPIRC10HeVWqTdr24Dnf8OORxMSGWpqFi3bTJEF3JJ5lfftjsapTxssso4jNqZnIG/uFrY7VVlPGNRq4I0Wy3dgd/C9x4HbDS4ct+y4BNVNXTooMtXBTAN3DI4OsC3Lce7CY3kmLSJV0jjfRpiLAE7XPf3wuGWeWVSlVRPCd9CxlnK2G4Ovz8MEBAvfB+tAJUiO1jYjx8+fvw0lOCbjjmRV40nEY2tw4SOf944dlkRYzw2cux3udI/xwz9ZI6BrNc91rk/HCJaWNyXMVM8txZ3B1fOxxHqlOjhKZSLQ+iGnpNEis8juTd2LX6L5jfyxxqSj4cmmkpHdWB0mIWJPmV57eGDdZpwqQ2d1VixUAGxYm2/TkPlgNpXqAqS00gQG5KyAfmDfDtRB390kSvSLGJVWnhZIUZmKRhUDd0gcj9oqd/DEP9LU/+7pPwJ+uJURLu8kMgAB7pmt0IB2b3HDvqcX2B8jhASeKdICcpKdliVtNbJuCWKhdj0tpw5OQksUYWRHZt1bvE7eFgdvLEZT1TNI7UOY0byuoXSsesG17cnv1wbDJWqqyTTQyhiNJjhKgqfMscSECL79lHeUJX1SU2XzVnrcCwRq0juU13HkAw/nigVnaftpWUlNX5Pl8sVCgAQqA3EAFgTfcg2v4Y0btJTmu7PVtLK8zRyQsGQXI6nkOf+OKX2krslTJoHpMnn0VVPHTiphchUjWxOjmDy5ADGjl7KYa52mT3WPmlSpqa0OgdlJ9hO1k/aammo8zVRmNKSZI2+ztZrWsOYGJiSleMSzyUVGxVDpBc8rgk+xzsPzOKf6Lsipah81zJhTzUVROqRCeMSNZFYEjbbdh4csXt4aOjSd46SHSiGypGqg7gnbl0/q+KuLbTbWOndr81fwLqjqDS/j/ANslimhpiZXigNSxJPDS5LHrcgXw5JLemAUHf9kWW2w2wJVV03GRHo5HbUAO8lr/ADwmKjSaIvIHilZyxBmbbfyNvgMU3G1t+6uAdVwR6lWBo5pLIjO/Ft3rbnnfmGwTT0yIqshGzi+uRj1BYXJ8MJQJSxRLp1uI1DkEtc236+N8DyVRLxlYpliViWAXY90/46cITeyXiEZLdnfWkTRhT7I9rcbefXD3rE37s34MRcUnFlZitUtrBRyHmcG8bybCtkBI4BIilkgWV4pC7mxCr9Xe1+tz1wxW19bCkktRBSGP9pnqX/8AHgKhy+lhJkno6GNmZVBRA5vew5qPH8sQ3pHr4cv7PiGJIk1yqV0IFNhubC1/L44t4WmK1ZtI8z/PNVcXV8Ci+t0H8ckDX9pstpqiGH6BoaiZ2J1KQqAdeaX226b4L7RdkstzCfKWhzCkp/WKGKolU1GhQCiE3S/tWN9I3IGM0Wo1mKSRrkKSNXMEHGm1sdBLneURVVLTMkfZ1RIHjHdm9UBDEdWBA54LhltGkB4cz5oRo43EY7xDVuGtLogcoVc7L+kKljgXLqzKmipoA3CNNJvpvspXYHnu19/DfF1yqtoM7p5Z6SKoMKHS+ucgjbw1Yw+qZaaWVIwAVIBPhi4eiDNZBXZpSOs0kbxcYCM+yFax289Y+WM7M8tpMpuq0+IVvKM2rPrNoVDLTsLV5pIqRmeSJ7lrE95tyem/jjpmYU9jDKG35L0ubflbA0knrMYZ45xdge9YG99tvfh2mhnEaktM5OpvrJLC1zYc/C2Bc8Los4Fc4qOxiMdTrAFyu3lcG+FxwqTGgacqHK3eUCxsT+gx01BSU66deJpC3JJH5HA9RU6gFT6pAxDFRc303sPE7DYdL4bqEwAlARjskavrB0KOlzf4459KU37q/wDCkwFGtTIxOuoWJVX/AGNgfiR4YM4sv3rfJf0woMcd+yUieG/dQ8SuWuaSa7MAAZR48/a8cUj0yqYKLLgCVJE1wX1G3c63OL16yzWmeF7FrAKlhtbp774zL0vSz1U8OpWSOGO1nJuSTvZR/dvfwxqZO1zsW3tPxCyc9eG4J08yB7yq1WI8EZLWD+zYeJNzjUPSrGtD21zS7xxRr3FAbkoQDfwuBiq+jrJajtX6TcuoaexpaOUVFSxXUNKMCbjqOQ+OLn2oyyPtD6SM3yuOISAieCKNSFBdIyq+7dcGdTlCG8madOIP+t30WJzSmSJpW9qVjId72vvi2+iIJ/aGRpGIEdI7d0kXJZB09+KTMTHTtE4IaO6EHpbF39FDPHm9QXDlFpu86oTpOpbC/S+5+GKOZOIwzz2VbKhOLp+a2OargLKOGQ1wRoRjgOWaRVIFRNra5X6k/AcsLWKoRw7mZAbqt4woFx5jC0dY6bVKrl7tbUwXULm21vdgCIMb+y9DB3spaU7uWXjVF15nQo/muPXjASEuXCMWcs635X6AW3AwmWppqcyKZ4Vcncu46eWAjOGCrT19ISSSSV1WuT4MPEDCb3ZLvd0S9QpdiGjWED2i1/65Y761F99H+MYaWGrcESVcKoQL6aYg/wDcxI64Ptyfwx/mw2AOe/RO1dkE09OkZapjZvrAUXS5vYCxPxJ+WMt9K0jPnHFijf1dNBIN9JIG9wR/6xqGuk0aqmqdUD91WmjU7AG99PnjP/SPDHmmZxwxENT2VxIsyuWFjcEADrbBHkcfmP2P07Ie/EEnC26j6rU/9H+Ts32f7HLNLmtMmcZiBJUo7hXJ1NpABO4sRuOeKXQ55l9D6W8wzLMasQ0Aq6pjMd9iXt87jGdzwgSEmThBRZQTsANgPd5YjM/zFqyqc3ju5JfhrYMxN7gchv4YKntdZDWAxjMPTrNMy9sBSHpRlyWq7bVdR2amaehqWEjXUr9Yxu1hYbYnfRc0cFVmrTm0YWNdn0D9q17jFFpohDNFPKF1A3sT0/q2L36M6oCuzeOwjkDK2tQWIsSNPMCwxnZt/iPHl8hSZMP7xh8/gq8GshLWWqpxyNtQ/XD9PUTyKWhqaYsLm3DJJH4vDCUlkS3Ckcb32Om/w6YcNfVtEWtqC3G8x3I+GAcgcvoj4EqRKvqYy1KuxPIQWt8dZxxppadFSCcqpZrgsVFySel/EDAyRtMLTpTISTq3LG/4d8KgpaSlUgLS8STUGKQjcaibG493yw03uTv1SxvYXSJaotHKI+FsS0jk7m/TT5Ye9Vh+5ofkf8mEo4sY4Y4Y12OpYlGCfWG8F/CuOmBbfuujrv2TENDJVvNFTiRzCQZNIDWAJBBAPiCMU30oqnCy8w6izcQMVFiR3bD3bnE1DdK+ngps6q3qYRaSKHWjyICW0hrXa5J38zy61n0p5wM0qaagjNSY6OMxstRe+s21Egk+A+WCPKsNoxDHA9fhB+Y5r41B1F0EmLjz7rN6/gRE3hKHxKg/ngWMxiQlSZH6BR/VsMpTev5lBTxDSZpVjBVb2ubXtiT7QwUlDm9bDlvFFGGHDEg0tYqCQR03JwUapdCHIsh6ZWq8ypaUrq4kqqyqSdr7i4/TGyeqRh5ohT0aajrkIB3a/wC0NAJOx3xkHZOKSftHSiJnVl1PqQXIAUnGppXZihSOXN6ZZOGW+vprs9tuek3JJHzxhZvTdWc0N5ea3smxNOgHa7T5I7gUyMrJTQtYm/dFuXS4wbS1JGiOnpUYNsAI0xGZZmE1Tlaz1mYRxzTSPHFFFSxu40g6iy2BsLA3BPOxscBUVbX5mt+HCtPKCNEcQHDC91iTbck3Ptdd8Y7svqRJPytatndFkhtyrE+YuiTySIFCEqA0gTUALki3TY8udsLyKcZpFKaeINUqG17sygBrkavEW6eXjiDZ2y8pIZaqCB2WGSWTSiQpqB71hcMCgI2G7L12Mj2YSOevkgoY5pKfiMwanj4aJcagxIXa9r6j06A4kOBa1skTPmsx2d1Xu/pMCO3ryRmcCPLamEsZ3lDBdEV2FyDbUPAG199sSPrUX/D+HFf7W5xL61IuXT0kvCRRUhe+7Pe5vve1yB47XNt7DfTeYfd0/wD06/5sQfp9SI6LRp5tTZd5N4O+ibXMGo6qBJJVeWpSRZU4bCNmuNAUlrfaIsbePiaX2jllkjeatWTjq3DYzOXckdWJub28zj2PYKcHSa2pq7IPe4xpQfo7yMZrm09dUtKmX5coeVomAcs1wirfqbE+4HyxG9qAsWdVhWo9aBKlZSpXVdQeR3A3x7HsTMcTXI7LptCK7EQU5r6hqydIgYxGGfcama9yL7iyMDz54tNbVDLEp4gaghEEcSrCqxvq0Mdwd97kc7qw36n2PYhrtDnkFK08E3lLzS1VcwZ5OMpaojuFMiEsTq3JG5bcm9yuHqvNKtKGhpVC05VQ8S0721W3tfcrYszG3PcY9j2KbxeE4u1GSk5BUVWYGuyrL2EjzQiN2ILB0ABYKu1th7R6E89ji45wn9neyUeWUqPXlZQauqEAChHVuQtt7QBa/SwO+3sex1SxDV1NoLwCqImeGgoazKooZYWqpjI9XxCJLHZha3Mi/uv7jiNvH++1P8Ufpj2PYfFgrB0zcBf/2Q==",
+      "performanceRating": 4.9,
+      "hourlyRate": 30
+    },
+    {
+      "id": "u-worker4",
+      "name": "Aisha Diop",
+      "email": "aisha@workforce.com",
+      "role": "worker",
+      "department": "Safety & Audit",
+      "designation": "Compliance Inspector",
+      "phone": "+1 (555) 890-1234",
+      "employeeId": "EMP-104",
+      "skills": [
+        "OSHA Regulations",
+        "Safety Inspection",
+        "Report Writing"
+      ],
+      "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150",
+      "performanceRating": 4.5,
+      "hourlyRate": 26
+    },
+    {
+      "id": "u-j5gbny9s1",
+      "name": "Alex Carter",
+      "email": "alex@workforce.com",
+      "role": "worker",
+      "department": "Field Engineering",
+      "designation": "Field Technician",
+      "phone": "+1 (555) 000-0000",
+      "employeeId": "EMP-372",
+      "skills": [],
+      "performanceRating": 5,
+      "hourlyRate": 25,
+      "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150"
+    },
+    {
+      "id": "u-2d7vocm1c",
+      "name": "James Miller",
+      "email": "james@workforce.com",
+      "role": "worker",
+      "department": "Field Engineering",
+      "designation": "Senior Supervisor",
+      "phone": "+1 (555) 000-0000",
+      "employeeId": "EMP-651",
+      "skills": [
+        "js"
+      ],
+      "performanceRating": 5,
+      "hourlyRate": 30,
+      "avatarUrl": "data:image/jpeg;base64,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"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att-1",
+      "userId": "u-worker1",
+      "userName": "Michael Chen",
+      "date": "2026-05-24",
+      "checkInTime": "2026-05-24T08:02:15.000Z",
+      "checkOutTime": "2026-05-24T17:05:00.000Z",
+      "status": "On Time",
+      "checkInLocation": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "address": "City Hall, Manhattan, NY"
+      },
+      "checkOutLocation": {
+        "lat": 40.7132,
+        "lng": -74.0055,
+        "address": "Park Row, Manhattan, NY"
+      },
+      "gpsVerified": true,
+      "faceVerificationSimulated": true
+    },
+    {
+      "id": "att-2",
+      "userId": "u-worker2",
+      "userName": "David Rodriguez",
+      "date": "2026-05-24",
+      "checkInTime": "2026-05-24T08:35:44.000Z",
+      "checkOutTime": "2026-05-24T16:45:00.000Z",
+      "status": "Late",
+      "checkInLocation": {
+        "lat": 40.7484,
+        "lng": -73.9857,
+        "address": "Empire State Building, NY"
+      },
+      "checkOutLocation": {
+        "lat": 40.758,
+        "lng": -73.9855,
+        "address": "Times Square, NY"
+      },
+      "gpsVerified": true,
+      "faceVerificationSimulated": true
+    },
+    {
+      "id": "att-3",
+      "userId": "u-worker3",
+      "userName": "Priya Patel",
+      "date": "2026-05-24",
+      "checkInTime": "2026-05-24T07:55:10.000Z",
+      "checkOutTime": "2026-05-24T16:00:00.000Z",
+      "status": "On Time",
+      "checkInLocation": {
+        "lat": 40.7851,
+        "lng": -73.9682,
+        "address": "Central Park, NY"
+      },
+      "checkOutLocation": {
+        "lat": 40.7855,
+        "lng": -73.968,
+        "address": "Central Park East, NY"
+      },
+      "gpsVerified": true,
+      "faceVerificationSimulated": true
+    },
+    {
+      "id": "att-4",
+      "userId": "u-worker4",
+      "userName": "Aisha Diop",
+      "date": "2026-05-24",
+      "checkInTime": "2026-05-24T08:15:30.000Z",
+      "checkOutTime": "2026-05-24T17:10:00.000Z",
+      "status": "Late",
+      "checkInLocation": {
+        "lat": 40.7061,
+        "lng": -73.9969,
+        "address": "DUMBO, Brooklyn, NY"
+      },
+      "checkOutLocation": {
+        "lat": 40.7052,
+        "lng": -73.998,
+        "address": "Brooklyn Bridge Park, NY"
+      },
+      "gpsVerified": true,
+      "faceVerificationSimulated": true
+    },
+    {
+      "id": "att-5",
+      "userId": "u-worker1",
+      "userName": "Michael Chen",
+      "date": "2026-05-25",
+      "checkInTime": "2026-05-25T07:58:20.000Z",
+      "checkOutTime": "2026-05-25T17:01:40.000Z",
+      "status": "On Time",
+      "checkInLocation": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "address": "City Hall, Manhattan, NY"
+      },
+      "checkOutLocation": {
+        "lat": 40.7128,
+        "lng": -74.006,
+        "address": "City Hall, Manhattan, NY"
+      },
+      "gpsVerified": true,
+      "faceVerificationSimulated": true
+    },
+    {
+      "id": "att-6",
+      "userId": "u-worker2",
+      "userName": "David Rodriguez",
+      "date": "2026-05-25",
+      "checkInTime": "2026-05-25T08:04:12.000Z",
+      "checkOutTime": "2026-05-25T17:00:00.000Z",
+      "status": "Late",
+      "checkInLocation": {
+        "lat": 40.7484,
+        "lng": -73.9857,
+        "address": "Empire State Building, NY"
+      },
+      "checkOutLocation": {
+        "lat": 40.7484,
+        "lng": -73.9857,
+        "address": "Empire State Building, NY"
+      },
+      "gpsVerified": true,
+      "faceVerificationSimulated": true
+    },
+    {
+      "id": "att-7",
+      "userId": "u-worker3",
+      "userName": "Priya Patel",
+      "date": "2026-05-25",
+      "checkInTime": "2026-05-25T07:52:10.000Z",
+      "checkOutTime": "2026-05-25T16:04:30.000Z",
+      "status": "On Time",
+      "checkInLocation": {
+        "lat": 40.7851,
+        "lng": -73.9682,
+        "address": "Central Park, NY"
+      },
+      "checkOutLocation": {
+        "lat": 40.782,
+        "lng": -73.965,
+        "address": "Metropolitan Museum, NY"
+      },
+      "gpsVerified": true,
+      "faceVerificationSimulated": true
+    },
+    {
+      "id": "att-8",
+      "userId": "u-worker4",
+      "userName": "Aisha Diop",
+      "date": "2026-05-25",
+      "checkInTime": "2026-05-25T11:00:15.000Z",
+      "checkOutTime": "2026-05-25T16:30:10.000Z",
+      "status": "Half Day",
+      "checkInLocation": {
+        "lat": 40.7061,
+        "lng": -73.9969,
+        "address": "DUMBO, Brooklyn, NY"
+      },
+      "checkOutLocation": {
+        "lat": 40.7061,
+        "lng": -73.9969,
+        "address": "DUMBO, Brooklyn, NY"
+      },
+      "gpsVerified": true,
+      "faceVerificationSimulated": true
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-101",
+      "title": "HVAC System Diagnostic at Times Square",
+      "description": "The cooling unit on the third floor is showing a low coolant alert. Inspect leaks, recharge coolant, and update operation logs.",
+      "assignedToId": "u-worker1",
+      "assignedToName": "Michael Chen",
+      "assignedById": "u-manager",
+      "assignedByName": "Sarah Jenkins",
+      "priority": "High",
+      "deadline": "2026-05-27",
+      "category": "Field Service",
+      "status": "In Progress",
+      "location": {
+        "lat": 40.758,
+        "lng": -73.9855,
+        "address": "Times Square, Broadway & W 42nd St, NY"
+      },
+      "updates": [
+        {
+          "id": "up-1",
+          "timestamp": "2026-05-26T08:00:00.000Z",
+          "updatedBy": "Sarah Jenkins",
+          "statusFrom": "Pending",
+          "statusTo": "In Progress",
+          "comment": "Assigned to Michael with urgent priority."
+        },
+        {
+          "id": "up-2",
+          "timestamp": "2026-05-26T09:30:00.000Z",
+          "updatedBy": "Michael Chen",
+          "statusFrom": "In Progress",
+          "statusTo": "In Progress",
+          "comment": "Arrived on location. Accessing roof deck cooling facility."
+        }
+      ]
+    },
+    {
+      "id": "task-102",
+      "title": "Fibre Cabling Connection Setup - Empire State",
+      "description": "Establish a redundant gigabit terminal link for Suite 542A. Double-check signal loss ratio.",
+      "assignedToId": "u-worker3",
+      "assignedToName": "Priya Patel",
+      "assignedById": "u-manager",
+      "assignedByName": "Sarah Jenkins",
+      "priority": "Medium",
+      "deadline": "2026-05-28",
+      "category": "Broadband Setup",
+      "status": "Completed",
+      "location": {
+        "lat": 40.7484,
+        "lng": -73.9857,
+        "address": "Empire State Building, NY"
+      },
+      "updates": [
+        {
+          "id": "up-9ur3o0r85",
+          "timestamp": "2026-05-26T14:52:52.442Z",
+          "updatedBy": "Priya Patel",
+          "statusFrom": "In Progress",
+          "statusTo": "Pending",
+          "comment": "Status updated from In Progress to Pending"
+        },
+        {
+          "id": "up-sd6ll3i1j",
+          "timestamp": "2026-05-26T14:52:54.970Z",
+          "updatedBy": "Priya Patel",
+          "statusFrom": "Pending",
+          "statusTo": "Completed",
+          "comment": "Status updated from Pending to Completed"
+        }
+      ]
+    },
+    {
+      "id": "task-103",
+      "title": "Commercial Router Audit & Config Review",
+      "description": "Audit client edge switches and apply current cybersecurity configuration policy.",
+      "assignedToId": "u-worker3",
+      "assignedToName": "Priya Patel",
+      "assignedById": "u-admin",
+      "assignedByName": "System Admin",
+      "priority": "High",
+      "deadline": "2026-05-26",
+      "category": "Field Service",
+      "status": "Completed",
+      "location": {
+        "lat": 40.7061,
+        "lng": -73.9969,
+        "address": "DUMBO office, 55 Water St, Brooklyn, NY"
+      },
+      "updates": [
+        {
+          "id": "up-3",
+          "timestamp": "2026-05-26T06:10:00.000Z",
+          "updatedBy": "Priya Patel",
+          "statusFrom": "In Progress",
+          "statusTo": "Completed",
+          "comment": "Firewall configuration updated, firmware updated, port security validated."
+        }
+      ]
+    },
+    {
+      "id": "task-104",
+      "title": "Industrial Warehouse Dispatch Validation",
+      "description": "Validate safety procedures and checklist on forklift fleet during bulk shipping schedule.",
+      "assignedToId": "u-worker4",
+      "assignedToName": "Aisha Diop",
+      "assignedById": "u-manager",
+      "assignedByName": "Sarah Jenkins",
+      "priority": "Low",
+      "deadline": "2026-05-29",
+      "category": "Safety & Audit",
+      "status": "Pending",
+      "location": {
+        "lat": 40.7851,
+        "lng": -73.9682,
+        "address": "Logistics Hub B, Brooklyn Waterfront, NY"
+      },
+      "updates": []
+    },
+    {
+      "id": "task-105",
+      "title": "Express Parts Delivery for Metro Hub A",
+      "description": "Deliver backup capacitors to Queens maintenance facility before the shifts close down.",
+      "assignedToId": "u-worker2",
+      "assignedToName": "David Rodriguez",
+      "assignedById": "u-manager",
+      "assignedByName": "Sarah Jenkins",
+      "priority": "High",
+      "deadline": "2026-05-26",
+      "category": "Delivery",
+      "status": "Completed",
+      "location": {
+        "lat": 40.7282,
+        "lng": -73.7949,
+        "address": "Queens Storage Yard, 73 Union Tpke, Queens, NY"
+      },
+      "updates": [
+        {
+          "id": "up-4",
+          "timestamp": "2026-05-26T14:15:00.000Z",
+          "updatedBy": "David Rodriguez",
+          "statusFrom": "Pending",
+          "statusTo": "Completed",
+          "comment": "Delivered and signed by site lead Mr. Arthur."
+        }
+      ]
+    }
+  ],
+  "gps_logs": [
+    {
+      "id": "gps-101",
+      "userId": "u-worker1",
+      "userName": "Michael Chen",
+      "latitude": 40.758,
+      "longitude": -73.9855,
+      "timestamp": "2026-05-26T05:50:00.000Z",
+      "status": "Working",
+      "batteryLevel": 88
+    },
+    {
+      "id": "gps-102",
+      "userId": "u-worker2",
+      "userName": "David Rodriguez",
+      "latitude": 40.7484,
+      "longitude": -73.9857,
+      "timestamp": "2026-05-26T05:51:00.000Z",
+      "status": "Traveling",
+      "batteryLevel": 72
+    },
+    {
+      "id": "gps-103",
+      "userId": "u-worker3",
+      "userName": "Priya Patel",
+      "latitude": 40.7851,
+      "longitude": -73.9682,
+      "timestamp": "2026-05-26T05:51:30.000Z",
+      "status": "Working",
+      "batteryLevel": 95
+    },
+    {
+      "id": "gps-104",
+      "userId": "u-worker4",
+      "userName": "Aisha Diop",
+      "latitude": 40.7061,
+      "longitude": -73.9969,
+      "timestamp": "2026-05-26T05:52:00.000Z",
+      "status": "On Break",
+      "batteryLevel": 64
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "title": "Quarterly Safety Compliance Check",
+      "content": "All field engineers must submit their certified OSHA safety equipment check sheets by Friday. Wear high-visibility uniforms at all Metro tunnel grids.",
+      "createdBy": "System Admin",
+      "createdAt": "2026-05-24T09:00:00.000Z",
+      "important": true
+    },
+    {
+      "id": "ann-2",
+      "title": "Memorial Day Weekend Schedules",
+      "content": "Workforce shifts will run on voluntary overtime pay rate (1.5x basic payout) during Saturday and Sunday. Request leaves via portal by Wednesday if you plan to travel.",
+      "createdBy": "Sarah Jenkins",
+      "createdAt": "2026-05-25T11:30:00.000Z",
+      "important": false
+    },
+    {
+      "id": "ann-sos-8fdac6hiv",
+      "title": "🚨 EMERGENCY SOS SIGNAL: Michael Chen",
+      "content": "Michael Chen has triggered a distress tactical SOS beacon at Coordinates: Lat 40.75800, Lng -73.98550. Emergency contact alerts dispatched. Check safety tab immediately!",
+      "createdBy": "Emergency Beacon",
+      "createdAt": "2026-05-26T14:28:05.813Z",
+      "important": true
+    }
+  ],
+  "chats": [
+    {
+      "id": "ch-101",
+      "senderId": "u-manager",
+      "senderName": "Sarah Jenkins",
+      "receiverId": "u-worker1",
+      "content": "Michael, please update your HVAC Times Square coordinates after check-in.",
+      "timestamp": "2026-05-26T05:40:00.000Z"
+    },
+    {
+      "id": "ch-102",
+      "senderId": "u-worker1",
+      "senderName": "Michael Chen",
+      "receiverId": "u-manager",
+      "content": "Already on site Sarah. GPS is locked inside Suite 3B. Placing sensor logs now.",
+      "timestamp": "2026-05-26T05:41:30.000Z"
+    },
+    {
+      "id": "ch-103",
+      "senderId": "u-worker2",
+      "senderName": "David Rodriguez",
+      "receiverId": "u-manager",
+      "content": "Completed delivery in Queens. Highway 495 has massive traffic. Heading back to base.",
+      "timestamp": "2026-05-26T05:45:00.000Z"
+    },
+    {
+      "id": "ch-sos-xlhp44m0q",
+      "senderId": "system-safety",
+      "senderName": "SYSTEM BEACON",
+      "receiverId": "all",
+      "content": "🚨 ALERT: [SOS] triggered by worker Michael Chen! Lat: 40.758, Lgn: -73.9855",
+      "timestamp": "2026-05-26T14:28:05.813Z"
+    }
+  ],
+  "payroll": [
+    {
+      "id": "pay-1",
+      "userId": "u-worker1",
+      "userName": "Michael Chen",
+      "month": "2026-05",
+      "hourlyRate": 28,
+      "hoursWorked": 160,
+      "overtimeHours": 15,
+      "bonus": 200,
+      "incentives": 150,
+      "deductions": 50,
+      "totalEarnings": 4910,
+      "status": "Paid"
+    },
+    {
+      "id": "pay-2",
+      "userId": "u-worker2",
+      "userName": "David Rodriguez",
+      "month": "2026-05",
+      "hourlyRate": 22,
+      "hoursWorked": 152,
+      "overtimeHours": 8,
+      "bonus": 100,
+      "incentives": 300,
+      "deductions": 0,
+      "totalEarnings": 3908,
+      "status": "Paid"
+    },
+    {
+      "id": "pay-3",
+      "userId": "u-worker3",
+      "userName": "Priya Patel",
+      "month": "2026-05",
+      "hourlyRate": 30,
+      "hoursWorked": 168,
+      "overtimeHours": 20,
+      "bonus": 250,
+      "incentives": 100,
+      "deductions": 40,
+      "totalEarnings": 6250,
+      "status": "Pending"
+    },
+    {
+      "id": "pay-4",
+      "userId": "u-worker4",
+      "userName": "Aisha Diop",
+      "month": "2026-05",
+      "hourlyRate": 26,
+      "hoursWorked": 140,
+      "overtimeHours": 2,
+      "bonus": 50,
+      "incentives": 80,
+      "deductions": 0,
+      "totalEarnings": 3822,
+      "status": "Pending"
+    },
+    {
+      "id": "pay-a91n8ihgu",
+      "userId": "u-j5gbny9s1",
+      "userName": "Topu Mondal",
+      "month": "2026-05",
+      "hourlyRate": 25,
+      "hoursWorked": 0,
+      "overtimeHours": 0,
+      "bonus": 0,
+      "incentives": 0,
+      "deductions": 0,
+      "totalEarnings": 0,
+      "status": "Pending"
+    },
+    {
+      "id": "pay-zblr3icg8",
+      "userId": "u-2d7vocm1c",
+      "userName": "James Miller",
+      "month": "2026-05",
+      "hourlyRate": 30,
+      "hoursWorked": 0,
+      "overtimeHours": 0,
+      "bonus": 0,
+      "incentives": 0,
+      "deductions": 0,
+      "totalEarnings": 0,
+      "status": "Pending"
+    }
+  ],
+  "safety_incidents": [
+    {
+      "id": "inc-seed-1",
+      "userId": "u-worker1",
+      "userName": "Michael Chen",
+      "type": "⚠️ Cable overheating spike log",
+      "severity": "Medium",
+      "location": "Times Square suite 3B",
+      "description": "High current draw detected on power feed during secondary core router backup cycle. High temperature warning was verified. Power cable rerouted to secondary busbar. High risks averted.",
+      "timestamp": "2026-05-25T14:00:00.000Z",
+      "status": "Mitigated"
+    },
+    {
+      "id": "inc-seed-2",
+      "userId": "u-worker3",
+      "userName": "Priya Patel",
+      "type": "⚠️ Environmental Gas leak warning",
+      "severity": "Critical",
+      "location": "Midtown NY hub basement",
+      "description": "High concentration of gaseous emissions detected in crawlway space. Recommended continuous OSHA ventilation protocols before technician ingress.",
+      "timestamp": "2026-05-26T06:15:00.000Z",
+      "status": "Under Investigation"
+    }
+  ],
+  "sos_alerts": [
+    {
+      "id": "sos-007hgtedh",
+      "userId": "u-worker1",
+      "userName": "Michael Chen",
+      "latitude": 40.758,
+      "longitude": -73.9855,
+      "timestamp": "2026-05-26T14:28:05.813Z",
+      "resolved": false
+    }
+  ]
+}
